@@ -1,0 +1,65 @@
+
+body {
+	/* Set the background image to the Hub Flag, and make sure it isn't bigger than the screen. Had problems with this earlier. */
+	background-image: url("assets/flag_bg.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+main {
+	/* We have to do this at the beginning of all content inside the body, due to the above code for the background */
+	background-image: none;
+	background-color: rgba(0,0,0,0.8);
+	
+	/*Give main content a neat rounded border. May change the color in the future. */
+	border-style: solid;
+	border-color: #b9c0cc;
+	border-width: 5px;
+	border-radius: 3px;
+	
+	/*Misc Stuff */
+	
+	
+	/*Make sure that the article doesn't completely cover the page, and make it centered. */
+	max-width: 65%;
+	margin-left: 17.25%;
+}
+
+/* 
+____________________________________________________________________________________________
+____________________________________________________________________________________________
+Article Text, Pictures, and Misc
+____________________________________________________________________________________________
+____________________________________________________________________________________________
+*/
+
+.title {
+	background-image: none;
+	background-color: rgba(0,0,0,0);
+	
+	/* Text Settings. */
+	text-align: center;
+	color: #38b548;
+}
+
+.article_text {
+	background-image: none;
+	background-color: rgba(0,0,0,0);
+	/* Similar settings to the title class */
+	color: #38b548;
+	text-align: justified;
+}
+
+.article_pic {
+
+	/* Adjust maximum picture size and center it */
+	max-width: 60%;
+	height: auto;
+	padding-left: 20%;
+	
+	/* Adjust opacity so it is fully visible */
+	background-color: rgba(0,0,0,0);
+}
+
+/* Developer Note: at this point in time, I realize that rgba is really weird. It stacks, so the <main> tag has a setting of 0,0,0,0.8 which means slightly transparent. Transparency on anything on top of that stacks, it doesn't replace the initial transparency. I got the logo fixed anyways, so that's good, right?*/
