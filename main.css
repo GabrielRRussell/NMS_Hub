@@ -1,10 +1,10 @@
 
 body {
 	/* Set the background image to the Hub Flag, and make sure it isn't bigger than the screen. Had problems with this earlier. */
-	background-image: url("assets/flag_bg.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-image: url(assets/flag_bg.png), url(assets/flag_bge.png);
+	background-size: 100%, 100%;
+	background-repeat: no-repeat, repeat;
+	background-attachment: fixed, fixed;
 }
 
 main {
@@ -19,7 +19,8 @@ main {
 	border-radius: 3px;
 	
 	/*Misc Stuff */
-	
+	padding-bottom: 15px;
+	margin-bottom: 30px;
 	
 	/*Make sure that the article doesn't completely cover the page, and make it centered. */
 	max-width: 65%;
@@ -41,14 +42,22 @@ ________________________________________________________________________________
 	/* Text Settings. */
 	text-align: center;
 	color: #38b548;
+	font-family: 'Raleway', sans-serif;
 }
 
-.article_text {
+/* Article Text and Article Lists are similar, but the latter requires a small change.*/
+.article_text, .article_li {
 	background-image: none;
 	background-color: rgba(0,0,0,0);
+	
 	/* Similar settings to the title class */
 	color: #38b548;
 	text-align: justified;
+	font-family: 'Raleway', sans-serif;
+}
+
+.article_li {
+	margin-left: 40px;
 }
 
 .article_pic {
@@ -60,6 +69,17 @@ ________________________________________________________________________________
 	
 	/* Adjust opacity so it is fully visible */
 	background-color: rgba(0,0,0,0);
+}
+
+/* Article Flair is a simple way to describe stylish text */
+.article_flair {
+	
+	/* Adjust the overall look of the text*/
+	color: #C41111;
+	font-style: italic;
+	font-size: 3em;
+	font-family: 'Rubik Mono One', sans-serif;
+	text-align: center;
 }
 
 /* Developer Note: at this point in time, I realize that rgba is really weird. It stacks, so the <main> tag has a setting of 0,0,0,0.8 which means slightly transparent. Transparency on anything on top of that stacks, it doesn't replace the initial transparency. I got the logo fixed anyways, so that's good, right?*/
