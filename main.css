@@ -53,8 +53,9 @@ ________________________________________________________________________________
 	
 	/* Similar settings to the title class */
 	color: #38b548;
-	text-align: justified;
+	text-align: justify;
 	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.35em;
 }
 
 .article_li {
@@ -62,8 +63,7 @@ ________________________________________________________________________________
 }
 
 .article_text {
-	margin-left: 15px;
-	margin-right: 15px;
+	text-align: center;
 }
 
 .article_video {
@@ -81,6 +81,7 @@ ________________________________________________________________________________
 	max-width: 60%;
 	height: auto;
 	margin-left: 20%;
+	
 	
 	/* Border Stuff */
 	border-style: solid;
@@ -106,7 +107,6 @@ ________________________________________________________________________________
 .article_flair_minor {
 	font-size: 2em;
 	color: #C41111;
-	font-size: 2em;
 	font-family: "Open Sans Condensed", "Sans Serif";
 	text-align: center;
 }
