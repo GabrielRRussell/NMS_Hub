@@ -1,4 +1,5 @@
 
+
 body {
 	/* Set the background image to the Hub Flag, and make sure it isn't bigger than the screen. Had problems with this earlier. */
 	background-image: url(assets/flag_bg.png), url(assets/flag_bge.png);
@@ -16,7 +17,7 @@ main {
 	border-style: solid;
 	border-color: #b9c0cc;
 	border-width: 5px;
-	border-radius: 3px;
+	border-radius: 5px;
 	
 	/*Misc Stuff */
 	padding-bottom: 15px;
@@ -53,11 +54,25 @@ ________________________________________________________________________________
 	/* Similar settings to the title class */
 	color: #38b548;
 	text-align: justified;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .article_li {
 	margin-left: 40px;
+}
+
+.article_text {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.article_video {
+	display: block;
+	margin: 0 auto;
+	border-style: solid;
+	border-color: #b9c0cc;
+	border-width: 3px;
+	border-radius: 20px;
 }
 
 .article_pic {
@@ -65,7 +80,13 @@ ________________________________________________________________________________
 	/* Adjust maximum picture size and center it */
 	max-width: 60%;
 	height: auto;
-	padding-left: 20%;
+	margin-left: 20%;
+	
+	/* Border Stuff */
+	border-style: solid;
+	border-color: #b9c0cc;
+	border-width: 3px;
+	border-radius: 20px;
 	
 	/* Adjust opacity so it is fully visible */
 	background-color: rgba(0,0,0,0);
@@ -79,6 +100,14 @@ ________________________________________________________________________________
 	font-style: italic;
 	font-size: 3em;
 	font-family: 'Rubik Mono One', sans-serif;
+	text-align: center;
+}
+
+.article_flair_minor {
+	font-size: 2em;
+	color: #C41111;
+	font-size: 2em;
+	font-family: "Open Sans Condensed", "Sans Serif";
 	text-align: center;
 }
 
