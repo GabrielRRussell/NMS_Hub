@@ -28,6 +28,21 @@ main {
 	margin-left: 17.25%;
 }
 
+aside {
+	/* Background Stuff */
+	background-image: none;
+	background-color: rgba(0,0,0,0.7);
+	
+	/* Misc */
+	max-width: 15%;
+	
+	/* Border similar to main */
+	border-style: solid;
+	border-color: #b9c0cc;
+	border-width: 5px;
+	border-radius: 10px;
+		
+}
 /* 
 ____________________________________________________________________________________________
 ____________________________________________________________________________________________
@@ -111,6 +126,20 @@ ________________________________________________________________________________
 	color: #C41111;
 	font-family: "Open Sans Condensed", "Sans Serif";
 	text-align: center;
+}
+
+.article_link {
+	background-image: none;
+	background-color: rgba(0,0,0,0);
+	
+	/* Similar settings to the title class */
+	color: #38b548;
+	text-align: inherit;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.35em;
+	padding-left: 5px;
+	padding-right: 5px;
+}
 }
 
 /* Developer Note: at this point in time, I realize that rgba is really weird. It stacks, so the <main> tag has a setting of 0,0,0,0.8 which means slightly transparent. Transparency on anything on top of that stacks, it doesn't replace the initial transparency. I got the logo fixed anyways, so that's good, right?*/
