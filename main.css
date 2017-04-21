@@ -35,6 +35,7 @@ aside {
 	
 	/* Misc */
 	max-width: 15%;
+	position: fixed;
 	
 	/* Border similar to main */
 	border-style: solid;
@@ -140,6 +141,15 @@ ________________________________________________________________________________
 	padding-left: 5px;
 	padding-right: 5px;
 }
+
+a {
+	color: green;
+	transition-property: color;
+	transition-duration: 0.5s;
+	transition-delay: 0s;
+}
+a:hover {
+	color: grey;
 }
 
 /* Developer Note: at this point in time, I realize that rgba is really weird. It stacks, so the <main> tag has a setting of 0,0,0,0.8 which means slightly transparent. Transparency on anything on top of that stacks, it doesn't replace the initial transparency. I got the logo fixed anyways, so that's good, right?*/
