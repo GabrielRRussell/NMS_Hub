@@ -60,6 +60,10 @@ ________________________________________________________________________________
 	text-align: center;
 	color: #38b548;
 	font-family: 'Raleway', sans-serif;
+	
+	/* Misc */
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 /* Article Text and Article Lists are similar, but the latter requires a small change.*/
@@ -120,6 +124,9 @@ ________________________________________________________________________________
 	font-size: 3em;
 	font-family: 'Rubik Mono One', sans-serif;
 	text-align: center;
+	
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .article_flair_minor {
